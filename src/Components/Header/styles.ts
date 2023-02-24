@@ -7,6 +7,10 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   > div {
     display: flex;
@@ -46,7 +50,6 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
   ${({ variant, theme }) =>
     variant === 'purple' &&
     css`
-      background: ${theme.colors[`brand-${variant}-light`]};
-      color: ${theme.colors[`brand-${variant}-dark`]};
+      color: ${theme.colors[`brand-purple`]};
     `}
 `
